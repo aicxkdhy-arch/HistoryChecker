@@ -1,0 +1,50 @@
+{
+  "Đau thần kinh tọa": {
+    "history": {
+      "Thời gian khởi phát": "khởi phát|xuất hiện.*(ngày|tuần|tháng)|cách (nhập viện|vào viện|khám)",
+      "Cơ chế chấn thương": "chấn thương|tai nạn|ngã|va đập",
+      "Đã điều trị": "điều trị|tiêm|châm cứu|thuốc|uống thuốc|dùng thuốc|vật lý trị liệu",
+      "Có sốt không": "\\b(sốt|không sốt|afebrile)\\b",
+      "Rối loạn cơ tròn": "rối loạn|bí|mất kiểm soát.*(cơ tròn|đại|tiểu)",
+      "Đau cách hồi": "đau cách hồi",
+      "Tê vùng yên ngựa": "(tê|mất cảm giác|dị cảm).*?(yên ngựa|hậu môn|sinh dục)"
+    },
+    "labs": [
+      { "name": "Công thức máu", "condition": "Cho tất cả bệnh nhân", "pattern": "Tổng phân tích tế bào máu ngoại vi" },
+      { "name": "Chức năng gan (GOT, GPT)", "condition": "Cho tất cả bệnh nhân", "pattern": "(AST|GOT).*Máu|ALT|GPT" },
+      { "name": "Chức năng thận (Creatinin)", "condition": "Cho tất cả bệnh nhân", "pattern": "Creatinin.*Máu" },
+      { "name": "Điện giải đồ", "condition": "Cho tất cả bệnh nhân", "pattern": "Điện giải đồ" },
+      { "name": "Tổng phân tích nước tiểu", "condition": "Khi nghi ngờ nhiễm trùng hoặc bệnh thận đi kèm", "pattern": "Tổng phân tích nước tiểu" },
+      { "name": "Calci, ALP, CRP", "condition": "Chỉ định khi nghi ngờ bệnh lý xương chuyển hóa hoặc viêm", "pattern": "Calci|ALP|CRP" },
+      { "name": "Xquang ngực", "condition": "Trước khi dùng bisphosphonate hoặc có triệu chứng hô hấp", "pattern": "Xquang ngực" },
+      { "name": "Siêu âm ổ bụng", "condition": "Khi bệnh nhân có bệnh nền gan/mật", "pattern": "Siêu âm ổ bụng" },
+      { "name": "Điện tim", "condition": "Trước khi kê NSAIDs hoặc bệnh nhân > 50 tuổi", "pattern": "Điện tim" },
+      { "name": "MRI cột sống thắt lưng", "condition": "Đau kéo dài > 6 tuần hoặc có dấu hiệu chèn ép thần kinh", "pattern": "MRI.*cột sống thắt lưng" }
+    ]
+  },
+
+  "Viêm khớp dạng thấp đợt tiến triển": {
+    "history": {
+      "Thời gian mắc": "(mắc|chẩn đoán|bị bệnh).*?(năm|tháng)",
+      "Đang điều trị bằng thuốc gì": "methotrexate|DMARD|NSAID|corticoid|thuốc sinh học|tofacitinib|leflunomide",
+      "Số khớp sưng": "số khớp sưng|đếm khớp sưng",
+      "Số khớp đau": "số khớp đau|đếm khớp đau",
+      "CDAI": "CDAI"
+    },
+    "labs": [
+      { "name": "Công thức máu", "condition": "Cho tất cả bệnh nhân", "pattern": "Tổng phân tích tế bào máu ngoại vi" },
+      { "name": "Chức năng gan (GOT, GPT)", "condition": "Cho tất cả bệnh nhân", "pattern": "(AST|GOT).*Máu|ALT|GPT" },
+      { "name": "Chức năng thận (Creatinin)", "condition": "Cho tất cả bệnh nhân", "pattern": "Creatinin.*Máu" },
+      { "name": "Điện giải đồ", "condition": "Cho tất cả bệnh nhân", "pattern": "Điện giải đồ" },
+      { "name": "RF, Anti-CCP", "condition": "Hỗ trợ chẩn đoán", "pattern": "RF|Anti.?CCP" },
+      { "name": "Tổng phân tích nước tiểu", "condition": "Cho tất cả bệnh nhân", "pattern": "Tổng phân tích nước tiểu" },
+      { "name": "CRP, Máu lắng", "condition": "Đánh giá mức độ viêm", "pattern": "CRP|máu lắng|ESR" },
+      { "name": "Glucose, HbA1c", "condition": "Cho tất cả bệnh nhân", "pattern": "Glucose|HbA1c" },
+      { "name": "HBsAg, HCVAb", "condition": "Tất cả bệnh nhân", "pattern": "HBsAg|HCVAb" },
+      { "name": "Xét nghiệm lao tiềm ẩn", "condition": "Nếu dùng thuốc sinh học/nhắm trúng đích", "pattern": "Quantiferon|T.?Spot|lao tiềm ẩn" },
+      { "name": "Xquang ngực", "condition": "Cho tất cả bệnh nhân", "pattern": "Xquang ngực" },
+      { "name": "Siêu âm ổ bụng", "condition": "Cho tất cả bệnh nhân", "pattern": "Siêu âm ổ bụng" },
+      { "name": "Điện tim", "condition": "Đánh giá bệnh tim mạch kèm theo", "pattern": "Điện tim" }
+    ]
+  }
+}
