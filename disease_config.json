@@ -11,7 +11,7 @@
     },
     "labs": [
       { "name": "Công thức máu", "condition": "Cho tất cả bệnh nhân", "pattern": "Tổng phân tích tế bào máu ngoại vi" },
-      { "name": "Chức năng gan (GOT, GPT)", "condition": "Cho tất cả bệnh nhân", "pattern": "(AST|GOT).*Máu|ALT|GPT" },
+      { "name": "Chức năng gan (GOT, GPT)", "condition": "Cho tất cả bệnh nhân", "pattern": "^(?=.*(AST|GOT).*Máu)(?=.*(ALT|GPT).*Máu).*$" },
       { "name": "Chức năng thận (Creatinin)", "condition": "Cho tất cả bệnh nhân", "pattern": "Creatinin.*Máu" },
       { "name": "Điện giải đồ", "condition": "Cho tất cả bệnh nhân", "pattern": "Điện giải đồ" },
       { "name": "Tổng phân tích nước tiểu", "condition": "Khi nghi ngờ nhiễm trùng hoặc bệnh thận đi kèm", "pattern": "Tổng phân tích nước tiểu" },
